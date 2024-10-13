@@ -1,0 +1,7 @@
+[INFO] [1728836563.890538189] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1728836563.893272381] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+^[[A^[[A^[[B^[[B^[[B[INFO] [1728836797.041648097] [turtlesim]: Spawning turtle [Leonardo] at x=[2.000000], y=[2.000000], theta=[0.200000]
+[INFO] [1728836822.994441817] [turtlesim]: Spawning turtle [Raphael] at x=[2.000000], y=[4.000000], theta=[0.200000]
+[INFO] [1728836852.513567065] [turtlesim]: Spawning turtle [Donatello] at x=[2.000000], y=[6.000000], theta=[0.200000]
+[INFO] [1728836875.890704573] [turtlesim]: Spawning turtle [Michelangelo] at x=[2.000000], y=[8.000000], theta=[0.200000]
+
