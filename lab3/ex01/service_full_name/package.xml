@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>service_full_name</name>
+  <version>0.0.0</version>
+  <description>ROS 2 service package that concatenates full names.</description>
+
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Зависимости для сборки и выполнения -->
+  <depend>rclcpp</depend>
+  <depend>rosidl_default_generators</depend>
+
+  <!-- Зависимость для запуска сгенерированных типов -->
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- Указание на пакет, содержащий интерфейсы ROS -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

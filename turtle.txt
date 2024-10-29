@@ -1,0 +1,37 @@
+ros2 param set /turtlesim background_r 150 заменить значение цвета фона
+
+ros2 run turtlesim turtlesim_node       запустить черепаху
+
+ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}" добавить подводную братву
+
+ros2 topic pub -r 1 /turtlesim1/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"
+
+ros2 run turtlesim turtle_teleop_key     движение с клавы
+
+ros2 run rqt_console rqt_console             rqt консоль
+
+ros2 launch mimic.py                    запуск лаунч файла
+
+ros2 topic pub -r 1 /turtlesim1/turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 100, y: 0.0, z: 0.0}}"
+
+ros2 pkg create --build-type ament_cmake --license Apache-2.0 my_pakage    создание нового пакета
+
+ros2 interface show new_package/srv/FullNameSumService          показать сообщение
+
+export EDITOR=code          для colcon edit что бы открыла нормлаьно
+
+
+10
+
+cd ~/ros2_ws/src
+ros2 pkcd text_to_cmd_vel/text_to_cmd_vel
+touch text_to_cmd_vel.py
+chmod +x text_to_cmd_vel.py
+g create --build-type ament_python text_to_cmd_vel --dependencies rclpy geometry_msgs std_msgs
+
+
+ros2 run turtlesim turtlesim_node
+ros2 run text_to_cmd_vel text_to_cmd_vel            в новом терминале
+ros2 topic pub /cmd_text std_msgs/String "turn_right"       в новом терминале
+
+

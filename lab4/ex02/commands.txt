@@ -1,0 +1,3 @@
+ 
+ros2 launch carrot turtle_tf2_dynamic_frame_demo.launch.py
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
